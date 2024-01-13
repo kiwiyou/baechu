@@ -23,11 +23,21 @@
     {
       "matches": ["https://www.acmicpc.net/contest/official/list"],
       "js": ["scripts/contests.js"],
-      "css": ["styles/contests.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://www.acmicpc.net/contest/view/*"],
+      "js": ["scripts/contest.js"],
+      "css": ["styles/contest.css"],
       "run_at": "document_idle",
       "all_frames": false
     }
   ],
-  "__firefox|opera|safari__permissions": ["https://raw.githubusercontent.com/kiwiyou/baechu/*"],
-  "__chrome|edge__host_permissions": ["https://raw.githubusercontent.com/kiwiyou/baechu/*"]
+  "__firefox|opera|safari__permissions": [
+    "https://raw.githubusercontent.com/kiwiyou/baechu/*"
+  ],
+  "__chrome|edge__host_permissions": [
+    "https://raw.githubusercontent.com/kiwiyou/baechu/*"
+  ]
 }

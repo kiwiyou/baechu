@@ -1,9 +1,11 @@
 const ext = global.browser || global.chrome;
 
+const button = document.createElement('button');
+button.setAttribute('onclick', `$('[data-toggle="tooltip"]').tooltip();`);
+document.body.append(button);
+
 ext.runtime.sendMessage({ query: 'getDB' }, (db) => {
-  const contests = document.querySelectorAll(
-    'td > a[href^="https://www.acmicpc.net/contest/view/"]',
-  );
+  const contests = document.querySelectorAll('td > a[href^="/contest/view"]');
   for (const contest of contests) {
     const contestId = contest.href.split('/').at(-1);
     const info = db[contestId];
@@ -11,8 +13,12 @@ ext.runtime.sendMessage({ query: 'getDB' }, (db) => {
     for (const key in info) {
       const label = document.createElement('span');
       label.classList.add('label', 'label-primary');
+      label.setAttribute('data-toggle', 'tooltip');
+      label.setAttribute('data-placement', 'top');
+      label.setAttribute('title', info[key]);
       label.append(ext.i18n.getMessage(key));
-      contest.append(label);
+      contest.parentElement.append(' ', label);
     }
   }
+  button.click();
 });

@@ -1,5 +1,13 @@
 # baechu
 
+## Build
+
+```bash
+pnpm install
+pnpm build firefox
+pnpm build chrome
+```
+
 ## License Notice
 
 ### Twemoji

@@ -1,0 +1,33 @@
+{
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appShortName__",
+  "description": "__MSG_appDescription__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "__chrome|edge__manifest_version": 3,
+  "default_locale": "ko",
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "64": "images/64.png",
+    "128": "images/128.png",
+    "144": "images/144.png",
+    "192": "images/192.png",
+    "256": "images/256.png"
+  },
+  "background": {
+    "__firefox|opera|safari__scripts": ["scripts/background.js"],
+    "__chrome|edge__service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.acmicpc.net/contest/official/list"],
+      "js": ["scripts/contests.js"],
+      "css": ["styles/contests.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "__firefox|opera|safari__permissions": ["https://raw.githubusercontent.com/kiwiyou/baechu/*"],
+  "__chrome|edge__host_permissions": ["https://raw.githubusercontent.com/kiwiyou/baechu/*"]
+}

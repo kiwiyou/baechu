@@ -1,0 +1,22 @@
+{
+  "appName": {
+    "message": "배추",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "배추",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "BOJ 대회의 뱃지 및 배경 정보를 알려줍니다!",
+    "description": "The description of the application"
+  },
+  "badge": {
+    "message": "뱃지",
+    "description": "Text for badge existence label"
+  },
+  "background": {
+    "message": "배경",
+    "description": "Text for background existence label"
+  }
+}

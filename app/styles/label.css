@@ -1,0 +1,19 @@
+.label-background {
+  background-color: #7950f2;
+}
+
+.label-badge {
+  background-color: #fab005;
+}
+
+html[theme='dark'] .label-background {
+  background-color: transparent;
+  color: #b197fc;
+  border: #b197fc 1px solid;
+}
+
+html[theme='dark'] .label-badge {
+  background-color: transparent;
+  color: #fab005;
+  border: #fab005 1px solid;
+}

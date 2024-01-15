@@ -12,7 +12,7 @@ ext.runtime.sendMessage({ query: 'getDB' }, (db) => {
     if (!info) continue;
     for (const key in info) {
       const label = document.createElement('span');
-      label.classList.add('label', 'label-primary');
+      label.classList.add('label', `label-${key}`);
       label.setAttribute('data-toggle', 'tooltip');
       label.setAttribute('data-placement', 'top');
       label.setAttribute('title', info[key]);

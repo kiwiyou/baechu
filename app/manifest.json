@@ -2,7 +2,7 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "manifest_version": 2,
   "__chrome|edge__manifest_version": 3,
   "default_locale": "ko",
@@ -21,7 +21,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.acmicpc.net/contest/official/list"],
+      "matches": ["https://www.acmicpc.net/contest/official/list*"],
       "js": ["scripts/contests.js"],
       "css": ["styles/label.css"],
       "run_at": "document_idle",

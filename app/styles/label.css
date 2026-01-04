@@ -1,19 +1,36 @@
-.label-background {
+.baechu-label-background {
   background-color: #7950f2;
 }
 
-.label-badge {
+.baechu-label-badge {
   background-color: #fab005;
 }
 
-html[theme='dark'] .label-background {
+.baechu-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.baechu-label-warning {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23e74c3c' d='M20.471 6.228c1.617-2.99 5.916-2.966 7.5.042l15.533 29.502c1.49 2.83-.562 6.23-3.76 6.23H8.255c-3.22 0-5.27-3.44-3.738-6.272zM24 15c-.69 0-1.25.56-1.25 1.25v11.5a1.25 1.25 0 1 0 2.5 0v-11.5c0-.69-.56-1.25-1.25-1.25m0 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4'/%3E%3C/svg%3E");
+}
+
+html[theme='dark'] .baechu-label-background {
   background-color: transparent;
   color: #b197fc;
   border: #b197fc 1px solid;
 }
 
-html[theme='dark'] .label-badge {
+html[theme='dark'] .baechu-label-badge {
   background-color: transparent;
   color: #fab005;
   border: #fab005 1px solid;
+}
+
+html[theme='dark'] .baechu-label-warning {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23e74c3c' d='M25.758 7.435c-.652-1.239-2.422-1.249-3.088-.017L6.717 36.919a1.75 1.75 0 0 0 1.539 2.583h31.487a1.75 1.75 0 0 0 1.549-2.566zm-5.287-1.207c1.617-2.99 5.916-2.966 7.5.042l15.533 29.502c1.49 2.83-.562 6.23-3.76 6.23H8.255c-3.22 0-5.27-3.44-3.738-6.272zM24 15c.69 0 1.25.56 1.25 1.25v11.5a1.25 1.25 0 1 1-2.5 0v-11.5c0-.69.56-1.25 1.25-1.25m0 20a2 2 0 1 0 0-4a2 2 0 0 0 0 4'/%3E%3C/svg%3E");
 }

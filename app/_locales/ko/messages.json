@@ -18,5 +18,9 @@
   "background": {
     "message": "배경",
     "description": "Text for background existence label"
+  },
+  "warning": {
+    "message": "주의",
+    "description": "Text for warning label"
   }
 }

@@ -17,7 +17,7 @@ ext.runtime.sendMessage({ query: 'getDB' }, (db) => {
     if (!info) continue;
     for (const key in info) {
       const text = info[key];
-      if (key === 'warning') {
+      if (key === 'warning' || key === 'order') {
         contest.parentElement.append(' ', createIconLabel(key, text));
         continue;
       }

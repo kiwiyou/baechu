@@ -22,5 +22,9 @@
   "warning": {
     "message": "주의",
     "description": "Text for warning label"
+  },
+  "order": {
+    "message": "문제 순서",
+    "description": "Text for order label"
   }
 }
